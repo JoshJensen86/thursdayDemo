@@ -30,7 +30,12 @@ app.get('/api/students', (req, res) => {
 })
 
 //added above rollbar.info
-
+// try {
+//     nonExistentFunction();
+// }catch (error) {
+//     console.error(error);
+//     rollbar.info(error)
+// }
 
 app.post('/api/students', (req, res) => {
    let {name} = req.body
